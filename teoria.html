@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang = "em">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <title>Página Principal</title>
+    
+    <style>
+        /* Seletor universal */
+        *{
+            margin: 0;
+        }
+        /* Seletor de tipo, aplicando em uma tag */
+        p{
+            color: rgb(12, 73, 51);
+        }
+
+        /* Seletor de classe */
+        .paragrafo{
+             background-color: rgb(85, 255, 6);
+             /* margin: 10px; - Aplica em todas as margens*/
+             /* margin:  10px 40px; - Aplica nas margens 'Laterais' e 'superior e inferior' */
+             font-size: xx-large;
+             /*margin: 10px 20px 30px 40px; aplica margem top, right, bottom, left*/
+            margin-left: 50px 20px;
+            /*Alinha elementos ao centro*/
+            text-align: center;
+        }
+
+        .imagem{
+            width: 150px;
+            height: 100px;
+        }
+    </style>
+
+
+</head>
+<!--Aplicando css inline cor de fundo-->
+<body style="background-color: rgb(195, 243, 241);">
+    Olá Mundo!
+    Bem vindo!
+    <h1> Desenvolvimento de sistemas</h1>
+    <h1>Sesi senai</h1>
+    <h2>Cabeçalho de nível 2</h2>
+    <h3>Cabeçalho de nível 3</h3>
+    <h4>Cabeçalho de nível 4</h4>
+    <h5>Cabeçalho de nível 5</h5>
+    <h6>Cabeçalho de nível 6</h6>
+
+    <!-- Insere uma linha na horizontal -->
+     <hr>
+    <!-- A tag 'p' insere um novo parágrafo -->
+     <p>Este é um parágrafo
+    </p>Outro parágrafo</p>
+     <hr>
+
+     <!-- A tag br quebra uma linha,
+      ela é uma teg sem fechamento -->
+
+     <p>Este é um texto muito grande,<br>
+     que eu desejo<br> quebrar a linha</p>
+
+    <!-- Inserindo um link 
+     para abrir uma página -->
+    <a href="https://www.sesi.org.br">Página do Sesi</a>
+    
+    <a href="https://www.sp.senai.br" target="_blank">Senai</a>
+
+    <!-- Tag img para adicionar uma imagem,  -->
+    <!-- O atributo src e preenchido com o caminho da imagem -->
+    <img src = https://i.pinimg.com/236x/d7/05/50/d70550d3af61e8ffc0e0525c6b735ffd.jpg>
+
+    <img src = "./img/jao frango.gif">
+
+
+    <p>Parágrafo com caracter &lt;br&gt;</p>
+    <p>&reg; &copy; &trade; &euro; &pound; &yen; &cent; &delta; &uarr;</p>
+
+    <!-- Para inserir emoji use o hexadecimal do site emoojipedia.org
+      e o código vai depois do &#x -->
+    
+      <p>Inserindo um emoji &#x1F60A &#x2764</p>
+
+      <!-- Tags para formatação e enfatização do 
+       texto -->
+    <b>Texto em negrito</b><br>
+    <strong>Texto importante</strong><br>
+    <h1><i>H1 italico</i></h1><br>
+    <em>Texto enfatizado</em><br>
+    <mark>Texto marcado</mark><br>
+    <H3>Texto<small>menor</small></H3><br>
+    <dell>Texto excluido</dell><br>
+    <ins>Texto inserido</ins><br>
+    <p>4<sub>2</sub></p>
+    <p>3<sub>3</sub></p>
+    <u>Texto sublinhado</u><br>
+ 
+    <!--Aplicando um link em uma imagem-->
+    <a href="https://www.sesisp.org.br" target="_blank"><img src="https://cdn.diariodolitoral.com.br/img/pc/920/610/dn_arquivo/2024/07/logo-do-sesi.jpg" alt=""></a>
+    </body>
+</html>
+
+<p style="font-size: xx-large;">Vídeos do youtube</p>
+<iframe width="928" height="522" src="https://www.youtube.com/embed/40_R3lyMMRo" title="Neymar Prime in Barcelona is Unforgettable | Best Skills &amp; Goals HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!--Aplicando css interno-->
+<p class="paragrafo">
+    Jão Frango 
+    <img class="imagem" src="img/jao frango.gif" alt="">
+</p>
+<hr>
+<!--Listas-->
+<!--Listas Ordenadas-->
+<ol>
+    <li>Acordar</li>
+    <li>Tomar Banho</li>
+    <li>Colocar uniforme</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir pra escola no horário</li>
+</ol>
+<br>
+<!--Listas ordenadas com letras maiusculas-->
+<ol type="A">
+    <li>Acordar</li>
+    <li>Tomar Banho</li>
+    <li>Colocar uniforme</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir pra escola no horário</li>
+</ol>
+<br>
+<!--Listas ordenadas com números romanos minusculos-->
+<ol type="I">
+    <li>Acordar</li>
+    <li>Tomar Banho</li>
+    <li>Colocar uniforme</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir pra escola no horário</li>
+</ol>
+<br>
+<!--Lista não ordenada-->
+<ul>
+    <li>Carvão</li>
+    <li>Carne</li>
+    <li>Bebidas</li>
+    <li>Arroz</li>
+</ul>
+<br>
+<!--Lista dentro de lista-->
+<ul>
+    <li>Carne</li>
+        <ul>
+            <li>Picanha</li>
+            <li>Cupim</li>
+            <li>Ponta de peito</li>
+        </ul>
+    <li>
+</ul>
+
+<!--Lista predefinida-->
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para conteúdo de um site</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de estilização do site</dd>
+    <dt>Javascript</dt>
+    <dd>Linguagem de programação</dd>
+</dl>
+    </body>  
+</html> 
+
+
+
+
+
+
