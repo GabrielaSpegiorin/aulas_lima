@@ -1,0 +1,24 @@
+.div1{ 
+    background-color: hsl(180, 100%, 50%);
+} 
+.div2{ 
+    background-color: hsl(270, 100%, 50%);
+} 
+.div3{ 
+    background-color: hsl(180, 100%, 50%);
+}
+
+.container{
+    border: 2px solid black;
+    /* Limita o tamanho do elemento */
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.item{
+    background: blue;
+    margin: 5px;
+    text-align: center;
+    color:aliceblue;
+}
