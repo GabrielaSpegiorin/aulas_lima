@@ -1,46 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
-    <link rel="stylesheet" href = "./css/estilo_flexbox.css">
+    <link rel="stylesheet" href="./css/estilo_flexbox.css">
 </head>
+
 <body>
     <h1>Trabalhando com Div</h1>
-    <div class ="div1">
+    <div class="div1">
         <div>
-        <h2>Londres</h2>
-        <p>Londres é capital da Inglaterra</p>
-        <p>Londres tem 13 milhões de habitantes</p>
+            <h2>Londres</h2>
+            <p>Londres é capital da Inglaterra</p>
+            <p>Londres tem 13 milhões de habitantes</p>
         </div>
     </div>
-    <div class = "div2">
+    <div class="div2">
         <div>
-        <h2>Londres</h2>
-        <p>Londres é capital da Inglaterra</p>
-        <p>Londres tem 13 milhões de habitantes</p>
+            <h2>Londres</h2>
+            <p>Londres é capital da Inglaterra</p>
+            <p>Londres tem 13 milhões de habitantes</p>
         </div>
     </div>
     <div>
-        <div class = "div3">
-        <h2>Londres</h2>
-        <p>Londres é capital da Inglaterra</p>
-        <p>Londres tem 13 milhões de habitantes</p>
+        <div class="div3">
+            <h2>Londres</h2>
+            <p>Londres é capital da Inglaterra</p>
+            <p>Londres tem 13 milhões de habitantes</p>
         </div>
     </div>
 
     <h1>Trabalhando com Flexbox</h1>
-    <p> Utilizamos flexbox para posicionar os elementos de uma linha ou coluna 
-         de forma dinâmica 
-    </p> 
+    <p> Utilizamos flexbox para posicionar os elementos de uma linha ou coluna
+        de forma dinâmica
+    </p>
     <p>Por padrão, os elementos exibidos em bloco (block)</p>
-    <section class="container">  
+    <section class="container">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
         <div class="item">Item 4</div>
     </section>
 
+    <p>Flex com mais elementos preenchendo a largura da tela</p>
+    <section class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </section>
+
+    <p>Flex Direction - Alterando a direção do elemento</p>
+    <section class="flex">
+        <div class="div-coluna">
+            <img src="https://i.pinimg.com/236x/22/1e/29/221e294c7ed51737a9b66d91399bb116.jpg">
+            <p>Eu me remexo muito</p>
+        </div>
+        
+
+        <div class="div-coluna">
+            <img src="https://i.pinimg.com/236x/74/3c/ef/743cef6b625c619c669dd634e46bec7b.jpg">
+            <p>Tico e Teco</p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://sentavemhistoria.wordpress.com/wp-content/uploads/2016/10/sid.jpg">
+            <p>Nathan cientista</p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://pm1.aminoapps.com/6485/de0275e96fb07e1bf096d0b6261810cf7283d8d6_hq.jpg">
+            <p>Naiara Azevedo</p>
+        </div>
+        <div class="div-coluna">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyN5hd9cPMbbEyn5x6VFip388B4H8OzjJpdg&s">
+            <p>Vyni do bbb</p>
+        </div>
+    </section>
+
+    <p>Flex Wrap - Faz a quebra do elemento quando não há mais espaço na tela</p>
+    <selection class="secao">
+        <img class="secao-imagem" src="https://ofuxico.com.br/wp-content/uploads/2024/05/chico-moedas-ana-maria.jpg">
+        <img class="secao-imagem"
+            src="https://s2-gshow.glbimg.com/bDMZJfZZXqgYHZZiXGyAweA_a7w=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/G/Y/gtBGYhQq68FjhOna3k4g/luisa-sonza-chico-terminam-namoro-gshow-musica-moedas.png">
+        <img class="secao-imagem" src="https://i.pinimg.com/236x/4f/08/3e/4f083e03fcbb88b4073969835908a676.jpg">
+    </selection>
+
+    <p>Justify - content - Alinha os itens flex no container de acordo com a direção (alinhar a esquerda)</p>
+    <selection class="alinhar-esquerda">
+        <img class="secao-imagem" src="https://ofuxico.com.br/wp-content/uploads/2024/05/chico-moedas-ana-maria.jpg">
+        <img class="secao-imagem"
+            src="https://s2-gshow.glbimg.com/bDMZJfZZXqgYHZZiXGyAweA_a7w=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/G/Y/gtBGYhQq68FjhOna3k4g/luisa-sonza-chico-terminam-namoro-gshow-musica-moedas.png">
+        <img class="secao-imagem" src="https://i.pinimg.com/236x/4f/08/3e/4f083e03fcbb88b4073969835908a676.jpg">
+    </selection>
+
+    <p>Alinhar ao centro</p>
+    <selection class="alinhar-centro">
+    <img class="secao-imagem" src="https://ofuxico.com.br/wp-content/uploads/2024/05/chico-moedas-ana-maria.jpg">
+    <img class="secao-imagem"
+        src="https://s2-gshow.glbimg.com/bDMZJfZZXqgYHZZiXGyAweA_a7w=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/G/Y/gtBGYhQq68FjhOna3k4g/luisa-sonza-chico-terminam-namoro-gshow-musica-moedas.png">
+    <img class="secao-imagem" src="https://i.pinimg.com/236x/4f/08/3e/4f083e03fcbb88b4073969835908a676.jpg">
+</selection>
+
+    <p>Alinhar a direita</p>
+    <selection class="alinhar-direita">
+    <img class="secao-imagem" src="https://ofuxico.com.br/wp-content/uploads/2024/05/chico-moedas-ana-maria.jpg">
+    <img class="secao-imagem"
+        src="https://s2-gshow.glbimg.com/bDMZJfZZXqgYHZZiXGyAweA_a7w=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/G/Y/gtBGYhQq68FjhOna3k4g/luisa-sonza-chico-terminam-namoro-gshow-musica-moedas.png">
+    <img class="secao-imagem" src="https://i.pinimg.com/236x/4f/08/3e/4f083e03fcbb88b4073969835908a676.jpg">
+</selection>
+
+
+<p>Alinhar os elementos nos cantos e ajustar ao centro</p>
+<selection class="alinhar-entre">
+    <img class="secao-imagem" src="https://ofuxico.com.br/wp-content/uploads/2024/05/chico-moedas-ana-maria.jpg">
+    <img class="secao-imagem"
+        src="https://s2-gshow.glbimg.com/bDMZJfZZXqgYHZZiXGyAweA_a7w=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/G/Y/gtBGYhQq68FjhOna3k4g/luisa-sonza-chico-terminam-namoro-gshow-musica-moedas.png">
+    <img class="secao-imagem" src="https://i.pinimg.com/236x/4f/08/3e/4f083e03fcbb88b4073969835908a676.jpg">
+</selection>
+
+<p>Space-around Alinhar os elementos a partir do espaço ao redor</p>
+<selection class="alinhar-redor">
+    <img class="secao-imagem" src="https://ofuxico.com.br/wp-content/uploads/2024/05/chico-moedas-ana-maria.jpg">
+    <img class="secao-imagem"
+        src="https://s2-gshow.glbimg.com/bDMZJfZZXqgYHZZiXGyAweA_a7w=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/G/Y/gtBGYhQq68FjhOna3k4g/luisa-sonza-chico-terminam-namoro-gshow-musica-moedas.png">
+    <img class="secao-imagem" src="https://i.pinimg.com/236x/4f/08/3e/4f083e03fcbb88b4073969835908a676.jpg">
+</selection>
+
+<p>Espaçamento usando colunas</p>
+<selection class="alinhar-coluna">
+    <img class="secao-imagem" src="https://ofuxico.com.br/wp-content/uploads/2024/05/chico-moedas-ana-maria.jpg">
+    <img class="secao-imagem"
+        src="https://s2-gshow.glbimg.com/bDMZJfZZXqgYHZZiXGyAweA_a7w=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/G/Y/gtBGYhQq68FjhOna3k4g/luisa-sonza-chico-terminam-namoro-gshow-musica-moedas.png">
+    <img class="secao-imagem" src="https://i.pinimg.com/236x/4f/08/3e/4f083e03fcbb88b4073969835908a676.jpg">
+</selection>
+
+<selection class="alinhar-itens-centro">
+        <div >Item 1</div>
+        <div >Item 2</div>
+        <div >Item 3</div>
+        <div >Item 4</div>
+</selection>
+
 </body>
+
 </html>

@@ -22,3 +22,90 @@
     text-align: center;
     color:aliceblue;
 }
+
+.flex{
+    display:flex;
+    /*Define a direção dos elementos */
+    flex-direction: column;
+}
+
+.flex > div > img {
+    height: 180px;
+    width: 280px;
+}
+
+.div-coluna{
+    height: 250px;
+    width: 300px;
+    background-color: rgb(255, 186, 186);
+}
+
+
+.secao{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(66, 246, 186);
+    gap: 60px;
+
+    /* Quebra os elementos para outra linha, caso não haja espaço suficiente*/
+}
+
+.secao-imagem{
+    width: 250px;
+    height: 195px;
+}
+
+.alinhar-esquerda {
+    display: flex;
+    flex-direction: row;
+      /*Alinha os elementos a esquerda*/
+    justify-content: flex-start;
+}
+
+.alinhar-centro {
+    display: flex;
+    flex-direction: row;
+    /*Alinha os elementos ao centro*/
+    justify-content: center;
+}
+
+.alinhar-direita {
+    display: flex;
+    flex-direction: row;
+    /*Alinha os elementos a direita*/
+    justify-content: flex-end;
+}
+
+.alinhar-entre{
+    display: flex;
+    flex-direction: row;
+    /*Aloca os elementos nas pontas e ajusta os elementos do centro*/
+    justify-content: space-between;
+}
+
+.alinhar-redor{
+    display: flex;
+    flex-direction: row;
+    /*Distribui os itens com espaço ao redor deles*/
+    justify-content: space-around;
+   
+}
+
+.alinhar-coluna{
+    display: flex;
+    flex-direction: column;
+    /*Distribui os itens com espaço ao redor deles*/
+    align-items: center;
+    width: 100%;
+    background-color: blue;
+}
+
+.alinhar-itens-centro{
+    display: flex;
+    flex-direction: row;
+    /*Distribui os itens com espaço ao redor deles*/
+    height: 200px;
+    align-items: center;
+    background-color: rgb(132, 232, 182);
+    justify-content: space-between;
+}
