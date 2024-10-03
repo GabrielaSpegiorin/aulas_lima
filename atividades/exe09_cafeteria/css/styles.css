@@ -5,9 +5,74 @@
     /*Assegura que padding e margin sejam incluidos nas dimenções totais do elemento*/
     box-sizing: border-box;
 }
+html{
+    color: aliceblue;
+    background-color: black;
+}
 
 .logo{
     font-family: Teko;
     font-size: 2rem;
 
+}
+
+.alinhar-itens-centro{
+    display: flex;
+    flex-direction: row;
+    /*Distribui os itens com espaço ao redor deles*/
+    height: 125px;
+    align-items: center;
+    background-color: rgb(11, 11, 11);
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+   }
+
+
+a{
+    text-decoration: none;
+    color: rgb(170, 172, 174);
+}
+
+.banner-cafe{
+   max-width: 100%;
+   margin: 0 auto ;
+}
+
+.banner-cafe> img {
+    width: 100%;
+    box-shadow: 10px 0px 20px rgba(0,0,0,0.5);
+    border-radius: 2px;
+    opacity:0.7;
+}
+
+.banner-novidades{
+    max-width: 1120px;
+    height: 60vh;
+    margin: auto;
+    padding: 0rem 2rem;
+    gap: 6rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.banner-conteudo{
+    /* Organizamos o conteudo em coluna*/
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.banner-imagens{
+    /*Definir largura máxima*/
+    max-width: 45%;
+    /* Exibir as imagens em 4 colunas*/
+    column-count: 4;
+}
+
+.banner-imagens > figure > img{
+    width: 100%;
+    border-radius: 5px;
 }
